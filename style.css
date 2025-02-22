@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Permanent+Marker&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter", serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+.volkswagen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.volkswagen .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 17.36px;
+    height: 20.26px;
+}
+
+.volkswagen .nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.volkswagen .nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 0%;
+}
+
+.volkswagen .nav-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.porsche {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.porsche .text-content {
+    width: 50%;
+}
+
+.porsche h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 69.6px;
+}
+
+.porsche p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.porsche button {
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 30px;
+    background: none;
+    cursor: pointer;
+    width: 170px;
+    height: 50px;
+}
+
+.porsche .image-content img {
+    width: 90%;
+    border-radius: 10px;
+}
+.audi {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.audi .category {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.audi img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.audi h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.bmw {
+    padding: 40px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    width: 100%;
+    width: 1395px;
+}
+
+.bmw .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 1350px;
+}
+
+.bmw .product {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bmw img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bmw h4 {
+    margin: 15px 0 10px;
+}
+
+.mercedes-benz {
+    padding: 30px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.mercedes-benz p {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+    .porsche {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .porsche .text-content,
+    .porsche .image-content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .audi {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .audi {
+        grid-template-columns: 1fr;
+    }
+
+    .bmw .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .volkswagen .nav-links {
+        display: none;
+    }
